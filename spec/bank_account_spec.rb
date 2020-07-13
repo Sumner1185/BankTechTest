@@ -9,8 +9,14 @@ describe BankAccount do
     expect(account.balance).to eq 0
   end
 
-  it 'should credit account when deposit is made' do
+  it 'should credit balance when deposit is made' do
     account.deposit(50)
     expect(account.balance).to eq 50
+  end
+
+  it 'should decrease amount from balance when withdrawal made' do
+    account.deposit(50)
+    account.withdraw(25)
+    expect(account.balance).to eq 25
   end
 end
