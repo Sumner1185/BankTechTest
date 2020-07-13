@@ -11,4 +11,8 @@ class Activity
   def add_deposit(amount)
     @transactions.push(amount)
   end
+
+  def add_withdrawal(amount)
+    @transactions.push(amount)
+  end
 end

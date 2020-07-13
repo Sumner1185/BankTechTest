@@ -13,4 +13,10 @@ describe Activity do
     list.add_deposit(50)
     expect(list.transactions.length).to eq 1
   end
+
+  it 'should add to transactions when a withdrawal is made' do
+    list = Activity.new
+    list.add_withdrawal(50)
+    expect(list.transactions.length).to eq 1
+  end
 end
