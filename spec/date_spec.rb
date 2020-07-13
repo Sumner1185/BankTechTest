@@ -3,8 +3,12 @@
 require 'date'
 
 describe Date do
-  it 'should get current date' do
+
+  before(:each) do
     Time.stub(:now) { Time.new(2012, 0o7, 13) }
-    expect(subject.date.day).to eq 13
+  end
+
+  it 'should return the date formatted like 13/07/2020' do
+    expect(subject.date).to eq '13/07/2012'
   end
 end
