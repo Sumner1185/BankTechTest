@@ -7,4 +7,10 @@ describe BankAccount do
     expect(account.balance).to eq 0
   end
 
+  it 'should credit account when deposit is made' do
+    account = BankAccount.new
+    account.deposit(50)
+    expect(account.balance).to eq 50
+  end
+
 end
