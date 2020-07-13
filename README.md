@@ -27,4 +27,13 @@ date || credit || debit || balance
 
 ### Time Frame
 
-Wok on this test until close of play tomorrow
+Work on this test until close of play tomorrow
+
+### Initial Class Diagram
+
+<p align="center>
+ <img src="class_diagram.png">
+</p><br><br>
+
+
+                                      
