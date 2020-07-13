@@ -31,9 +31,7 @@ Work on this test until close of play tomorrow
 
 ### Initial Class Diagram
 
-<p align="center>
- <img src="class_diagram.png">
+<p align="center">
+ <img src=class_diagram.png width=25%>
 </p><br><br>
 
-
-                                      
