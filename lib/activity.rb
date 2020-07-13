@@ -9,10 +9,10 @@ class Activity
   end
 
   def add_deposit(date, amount)
-    @transactions.push([date, amount, ""])
+    @transactions.push([date, amount, ''])
   end
 
   def add_withdrawal(date, amount)
-    @transactions.push([date, "", amount])
+    @transactions.push([date, '', amount])
   end
 end
