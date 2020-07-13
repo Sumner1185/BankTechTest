@@ -1,11 +1,10 @@
 # frozen_string_literal: true
-require 'date'
 
 # date class to retrieve current date formatted as required
 class Date
+  attr_reader :date
 
-  def get_date
-    Time.now
+  def initialize
+    @date = Time.now
   end
-
 end
