@@ -7,4 +7,8 @@ class Activity
   def initialize
     @transactions = []
   end
+
+  def add_deposit(amount)
+    @transactions.push(amount)
+  end
 end
