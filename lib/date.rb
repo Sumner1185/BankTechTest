@@ -9,6 +9,6 @@ class Date
   end
 
   def format_date
-    Time.now.strftime("%d/%m/%Y")
+    Time.now.strftime('%d/%m/%Y')
   end
 end

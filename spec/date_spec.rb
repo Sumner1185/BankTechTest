@@ -3,7 +3,6 @@
 require 'date'
 
 describe Date do
-
   before(:each) do
     Time.stub(:now) { Time.new(2012, 0o7, 13) }
   end
