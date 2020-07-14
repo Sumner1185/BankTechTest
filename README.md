@@ -32,7 +32,7 @@ Work on this test until close of play tomorrow
 ### Initial Class Diagram
 
 <p align="center">
- <img src=class_diagram.png width=60%>
+ <img src=images/class_diagram.png width=60%>
 </p><br><br>
 
 ### My Approach
@@ -69,3 +69,11 @@ $ irb -r './lib/bank_account.rb'
 ```
 This will open the program in irb. Some screenshots to show how the program operates:
 
+
+<p align="center">
+ <img src=images/irb_app_functions.png width=60%>
+</p><br><br>
+
+<p align="center">
+ <img src=images/irb_print_statement.png width=60%>
+</p><br><br>
