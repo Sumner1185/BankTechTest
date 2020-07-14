@@ -13,5 +13,10 @@ describe Transaction do
     transaction = Transaction.new('date', '50.00')
     expect(transaction.credit).to eq '50.00'
   end
+
+  it 'should have a default value of '' if no credit given' do
+    transaction = Transaction.new('date', '')
+    expect(transaction.credit).to eq ''
+  end
   
 end
