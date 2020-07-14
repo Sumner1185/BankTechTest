@@ -6,8 +6,8 @@ describe BankAccount do
   subject(:account) { BankAccount.new }
   let(:transactions) do
     [
-      ['13/07/2020', '50', '', '100'],
-      ['14/07/2020', '', '50', '50']
+      ['13/07/2020', '50.00', '', '100.00'],
+      ['14/07/2020', '', '50.00', '50.00']
     ]
   end
 

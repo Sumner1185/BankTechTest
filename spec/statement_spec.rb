@@ -5,8 +5,8 @@ require 'statement'
 describe Statement do
   let(:transactions) do
     [
-      ['13/07/2020', '50', '', '100'],
-      ['14/07/2020', '', '50', '50']
+      ['13/07/2020', '50.00', '', '100.00'],
+      ['14/07/2020', '', '50.00', '50.00']
     ]
   end
 
@@ -17,6 +17,6 @@ describe Statement do
   it 'should print each element from transactions array' do
     expect do
       subject.print(transactions)
-    end.to output("date || credit || debit || balance\n14/07/2020 ||  || 50 || 50\n13/07/2020 || 50 ||  || 100\n").to_stdout
+    end.to output("date || credit || debit || balance\n14/07/2020 ||  || 50.00 || 50.00\n13/07/2020 || 50.00 ||  || 100.00\n").to_stdout
   end
 end

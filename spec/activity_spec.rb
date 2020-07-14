@@ -19,7 +19,7 @@ describe Activity do
     end
 
     it 'should add date, amount and an empty string' do
-      expect(list.transactions[0]).to eq ['13/07/2020', 50, '', 100]
+      expect(list.transactions[0]).to eq ['13/07/2020', '50.00', '', '100.00']
     end
   end
 
@@ -33,7 +33,7 @@ describe Activity do
     end
 
     it 'should add date, empty string and amount' do
-      expect(list.transactions[0]).to eq ['13/07/2020', '', 50, 100]
+      expect(list.transactions[0]).to eq ['13/07/2020', '', '50.00', '100.00']
     end
   end
 end
