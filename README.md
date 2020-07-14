@@ -35,3 +35,37 @@ Work on this test until close of play tomorrow
  <img src=class_diagram.png width=60%>
 </p><br><br>
 
+### My Approach
+
+My initial approach was to think about what different classes I would like to have and how they would interact with each other. In the end I decided to have:
+
+1. BankAccount
+2. Activity
+3. Date
+4. Statement
+
+I felt that to have my main BankAccount class responsible for formatting the date, or formatting the output of printing the statement would violate the DRY principle. All of my classes were tested separately and independently to ensure isolation.
+
+The main area that I struggled with regard to my tests were the output of the print method within Statement. However it didn't take too much Googling to find out how to test this effectively.
+
+### Testing
+![Test_coverage](https://img.shields.io/badge/coverage-97.59%25-green)
+![Rspec](https://img.shields.io/badge/Rspec-100%25-green)
+
+* Run tests using `rspec`
+* Use `rubocop` to lint code
+* Test coverage shown with `simplecov`
+
+### Installation
+
+* Clone this repo to your local machine using `git@github.com:Sumner1185/BankTechTest.git`
+* Install dependencies:
+```
+$ bundle install
+```
+Then run:
+```
+$ irb -r './lib/bank_account.rb'
+```
+This will open the program in irb. Some screenshots to show how the program operates:
+
