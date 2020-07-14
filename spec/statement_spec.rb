@@ -13,6 +13,8 @@ describe Statement do
   end
 
   it 'should print each element from transactions array' do
-    expect(subject.print(transactions)).to eq '13/07/2020 || 50 ||  || 100\n14/07/2020 ||  || 50 || 50'
+    expect do
+      subject.print(transactions)
+    end.to output("date || credit || debit || balance\n13/07/2020 || 50 ||  || 100\n14/07/2020 ||  || 50 || 50\n").to_stdout
   end
 end
