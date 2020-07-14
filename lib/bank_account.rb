@@ -18,13 +18,13 @@ class BankAccount
   def deposit(amount)
     @balance += amount
     credit = amount_two_decimals(amount)
-    @activity.add_deposit(@date.format_date, credit, @balance)
+    @activity.add_transaction(@date.format_date, credit, '', @balance)
   end
 
   def withdraw(amount)
     @balance -= amount
     debit = amount_two_decimals(amount)
-    @activity.add_withdrawal(@date.format_date, debit, @balance)
+    @activity.add_transaction(@date.format_date, '', debit, @balance)
   end
 
   def print_statement
