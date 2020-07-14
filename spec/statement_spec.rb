@@ -5,8 +5,8 @@ require 'statement'
 describe Statement do
   let(:transactions) do
     [
-      ['13/07/2020', '50.00', '', '100.00'],
-      ['14/07/2020', '', '50.00', '50.00']
+      { date: '13/07/2020', deposit: '50.00', withdraw: '', balance: '100.00' },
+      { date: '14/07/2020', deposit: '', withdraw: '50.00', balance: '50.00' }
     ]
   end
 

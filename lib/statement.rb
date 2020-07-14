@@ -12,8 +12,10 @@ class Statement
 
   def print(transactions)
     @output.puts header
-    transactions.reverse.each do |item|
-      @output.puts item.join(' || ')
+    transactions.reverse.each do |hash|
+      hash.each do |item|
+        @output.puts (item[:date]).to_s
+      end
     end
   end
 end
