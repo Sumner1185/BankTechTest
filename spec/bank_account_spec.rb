@@ -4,6 +4,12 @@ require 'bank_account'
 
 describe BankAccount do
   subject(:account) { BankAccount.new }
+  let(:transactions) do
+    [
+      ['13/07/2020', '50', '', '100'],
+      ['14/07/2020', '', '50', '50']
+    ]
+  end
 
   it 'should initialise with a balance of 0' do
     expect(account.balance).to eq 0

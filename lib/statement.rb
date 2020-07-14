@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
+# class to format statement output
 class Statement
-
   def initialize(output: $stdout)
     @output = output
   end
@@ -12,7 +12,7 @@ class Statement
 
   def print(transactions)
     @output.puts header
-    results = transactions.each do |item|
+    transactions.reverse.each do |item|
       @output.puts item.join(' || ')
     end
   end
