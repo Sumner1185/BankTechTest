@@ -16,8 +16,8 @@ describe Transaction do
       expect(@transaction.credit).to eq '100.00'
     end
 
-    it 'should store an amount of withdraw' do
-      expect(@transaction.withdraw).to eq '50.00'
+    it 'should store an amount of debit' do
+      expect(@transaction.debit).to eq '50.00'
     end
 
     it 'should store a balance' do
@@ -31,9 +31,9 @@ describe Transaction do
       expect(transaction.credit).to eq ''
     end
 
-    it 'should take an empty string if no withdraw given' do
+    it 'should take an empty string if no debit given' do
       transaction = Transaction.new('date', '50.00', '', '500.00')
-      expect(transaction.withdraw).to eq ''
+      expect(transaction.debit).to eq ''
     end
   end
 end
