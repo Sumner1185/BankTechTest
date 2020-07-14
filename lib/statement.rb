@@ -6,10 +6,9 @@ class Statement
   end
 
   def print(transactions)
-    arr = transactions.each_with_index do |value, index|
-      value[index].join(' || ')
-      index += 1
+    puts header
+    transactions.each do |item|
+      puts item.join(' || ')
     end
-    arr.join('\n')
   end
 end
