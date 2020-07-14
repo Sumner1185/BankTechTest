@@ -2,12 +2,12 @@
 
 # class in charge of handling each transaction
 class Transaction
-  attr_reader :date, :credit, :withdraw, :balance
+  attr_reader :date, :credit, :debit, :balance
 
-  def initialize(date, credit, withdraw, balance)
+  def initialize(date, credit, debit, balance)
     @date = date
     @credit = credit
-    @withdraw = withdraw
+    @debit = debit
     @balance = balance
   end
 end

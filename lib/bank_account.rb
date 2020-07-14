@@ -17,15 +17,23 @@ class BankAccount
 
   def deposit(amount)
     @balance += amount
-    @activity.add_deposit(@date.format_date, amount, @balance)
+    credit = amount_two_decimals(amount)
+    @activity.add_deposit(@date.format_date, credit, @balance)
   end
 
   def withdraw(amount)
     @balance -= amount
-    @activity.add_withdrawal(@date.format_date, amount, @balance)
+    debit = amount_two_decimals(amount)
+    @activity.add_withdrawal(@date.format_date, debit, @balance)
   end
 
   def print_statement
     @statement.print(@activity.transactions)
+  end
+
+  private
+
+  def amount_two_decimals(amount)
+    format('%.2f', amount)
   end
 end

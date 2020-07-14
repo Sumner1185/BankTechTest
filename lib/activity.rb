@@ -1,34 +1,23 @@
 # frozen_string_literal: true
 
+require_relative './transaction'
+
 # class to keep track of all activity on account
 class Activity
-  attr_reader :transactions
+  attr_reader :all_transactions
 
   def initialize
-    @transactions = []
+    @all_transactions = []
+    @transaction_class = Transaction
   end
 
-  def add_deposit(date, amount, balance)
-    formatted_amount = amount_two_decimals(amount)
+  def add_transaction(date, credit, debit, balance)
     formatted_balance = balance_two_decimals(balance)
-    @transactions.push(
-      { date: date, deposit: formatted_amount, withdraw: '', balance: formatted_balance }
-    )
-  end
-
-  def add_withdrawal(date, amount, balance)
-    formatted_amount = amount_two_decimals(amount)
-    formatted_balance = balance_two_decimals(balance)
-    @transactions.push(
-      { date: date, deposit: '', withdraw: formatted_amount, balance: formatted_balance }
-    )
+    new_transaction = @transaction_class.new(date, credit, debit, balance)
+    @all_transactions.push(new_transaction)
   end
 
   private
-
-  def amount_two_decimals(amount)
-    format('%.2f', amount)
-  end
 
   def balance_two_decimals(balance)
     format('%.2f', balance)
