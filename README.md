@@ -64,16 +64,36 @@ The main area that I struggled with regard to my tests were the output of the pr
 ```
 $ bundle install
 ```
-Then run:
+### To run the program:
+```
+$ cd BankTechTest
+```
+Then open within `irb`:
 ```
 $ irb -r './lib/bank_account.rb'
 ```
-This will open the program in irb. Some screenshots to show how the program operates:
+Create a new bank account:
+```
+> account = BankAccount.new
+```
+To make a deposit of 1000:
+```
+> account.deposit(1000)
+```
+To make a deposit of 2000:
+```
+> account.deposit(2000)
+```
+To make a withdrawal of 500:
+```
+> account.withdraw(500)
+```
+To print statement:
+```
+> account.print_statement
+```
+This will produce the following output in line with acceptance criteria:
 
 <p align="center">
- <img src=images/irb_functions.png width=60%>
-</p><br><br>
-
-<p align="center">
- <img src=images/irb_printstatement.png width=60%>
+ <img src=images/irb_functions.png width=110%>
 </p><br><br>
