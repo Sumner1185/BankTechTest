@@ -28,7 +28,7 @@ class BankAccount
   end
 
   def print_statement
-    @statement.print(@activity.transactions)
+    @statement.print(@activity.all_transactions)
   end
 
   private

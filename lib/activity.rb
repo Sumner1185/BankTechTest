@@ -13,7 +13,7 @@ class Activity
 
   def add_transaction(date, credit, debit, balance)
     formatted_balance = balance_two_decimals(balance)
-    new_transaction = @transaction_class.new(date, credit, debit, balance)
+    new_transaction = @transaction_class.new(date, credit, debit, formatted_balance)
     @all_transactions.push(new_transaction)
   end
 

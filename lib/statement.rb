@@ -4,6 +4,7 @@
 class Statement
   def initialize(output: $stdout)
     @output = output
+    @activity_class = Activity
   end
 
   def header
@@ -12,10 +13,8 @@ class Statement
 
   def print(transactions)
     @output.puts header
-    transactions.reverse.each do |hash|
-      hash.each do |item|
-        @output.puts (item[:date]).to_s
-      end
+    transactions.reverse.each do |item|
+      @output.puts "#{item.date} || #{item.credit} || #{item.debit} || #{item.balance}"
     end
   end
 end
