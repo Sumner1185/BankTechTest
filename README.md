@@ -50,8 +50,7 @@ I felt that to have my main BankAccount class responsible for formatting the dat
 The main area that I struggled with regard to my tests were the output of the print method within Statement as well as full features tests that also need to test the output of print_statement to stdout.
 
 ### Testing
-![Test_coverage](https://img.shields.io/badge/coverage-97.59%25-green)
-![Rspec](https://img.shields.io/badge/Rspec-100%25-green)
+![Test_coverage](https://img.shields.io/badge/coverage-100%25-green)
 
 * Run tests using `rspec`
 * Use `rubocop` to lint code
