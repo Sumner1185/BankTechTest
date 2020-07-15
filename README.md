@@ -41,12 +41,13 @@ My initial approach was to think about what different classes I would like to ha
 
 1. BankAccount
 2. Activity
-3. Date
-4. Statement
+3. Transaction
+4. Date
+5. Statement
 
 I felt that to have my main BankAccount class responsible for formatting the date, or formatting the output of printing the statement would violate the DRY principle. All of my classes were tested separately and independently to ensure isolation.
 
-The main area that I struggled with regard to my tests were the output of the print method within Statement. However it didn't take too much Googling to find out how to test this effectively.
+The main area that I struggled with regard to my tests were the output of the print method within Statement as well as full features tests that also need to test the output of print_statement to stdout.
 
 ### Testing
 ![Test_coverage](https://img.shields.io/badge/coverage-97.59%25-green)
