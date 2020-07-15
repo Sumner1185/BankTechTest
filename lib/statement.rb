@@ -2,8 +2,7 @@
 
 # class to format statement output
 class Statement
-  def initialize(output: $stdout)
-    @output = output
+  def initialize
     @activity_class = Activity
   end
 
@@ -12,9 +11,9 @@ class Statement
   end
 
   def print(transactions)
-    @output.puts header
+    puts header
     transactions.reverse.each do |item|
-      @output.puts "#{item.date} || #{item.credit} || #{item.debit} || #{item.balance}"
+      puts "#{item.date} || #{item.credit} || #{item.debit} || #{item.balance}"
     end
   end
 end
