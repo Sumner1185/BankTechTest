@@ -6,7 +6,7 @@ require_relative './transaction'
 class Activity
   attr_reader :all_transactions
 
-  def initialize
+  def initialize(transaction_class = Transaction)
     @all_transactions = []
     @transaction_class = Transaction
   end
