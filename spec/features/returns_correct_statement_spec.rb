@@ -6,7 +6,7 @@ describe 'full user feature' do
 
   it 'should return correct printed statement' do
     account = BankAccount.new
-    Time.stub(:now) { Time.new(2012, 0o7, 15) }
+    Time.stub(:now) { Time.new(2012, 7, 15) }
     account.deposit(1000)
     account.deposit(2000)
     account.withdraw(500)
