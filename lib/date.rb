@@ -5,10 +5,6 @@ class Date
   attr_reader :date
 
   def initialize
-    @date = format_date
-  end
-
-  def format_date
-    Time.now.strftime('%d/%m/%Y')
+    @date = Time.now.strftime('%d/%m/%Y')
   end
 end
