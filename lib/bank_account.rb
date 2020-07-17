@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require_relative './date.rb'
 require_relative './statement.rb'
 require_relative './activity.rb'
 
