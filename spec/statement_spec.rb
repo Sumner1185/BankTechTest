@@ -12,8 +12,8 @@ describe Statement do
     transactions = []
     transaction_1 = instance_double('Transaction')
     transaction_2 = instance_double('Transaction')
-    allow(transaction_1).to receive_messages(date: "13/07/2020", credit: "50.00", debit: "", balance: "100.00")
-    allow(transaction_2).to receive_messages(date: "14/07/2020", credit: "", debit: "50.00", balance: "50.00")
+    allow(transaction_1).to receive_messages(date: "13/07/2020", credit: '50.00', debit: "", balance: "100.00")
+    allow(transaction_2).to receive_messages(date: "14/07/2020", credit: "", debit: '50.00', balance: "50.00")
     transactions.push(transaction_1, transaction_2)
 
     expect do
