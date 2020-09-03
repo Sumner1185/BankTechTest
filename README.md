@@ -1,6 +1,6 @@
-Bank Tech test is a small project designed to practice code quality, test-driven development and process. It has been completed as a JavaScript implementation in Node.
+Bank Tech test is a small project designed to practice code quality, test-driven development and process. It has been completed as a Ruby implementation.
 
-I have also done an implementation in Ruby **[available here]**.
+I have also done an implementation in JavaScript/Node **[available here]**.
 
 The application allows you to create an account, deposit funds into it, withdraw from it, and print statements that capture the account history and print to the screen.
 
