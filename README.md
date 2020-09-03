@@ -1,5 +1,8 @@
-# BankTechTest
-First tech test for week 10 
+Bank Tech test is a small project designed to practice code quality, test-driven development and process. It has been completed as a JavaScript implementation in Node.
+
+I have also done an implementation in Ruby **[available here]**.
+
+The application allows you to create an account, deposit funds into it, withdraw from it, and print statements that capture the account history and print to the screen.
 
 ## Specification
 
@@ -96,3 +99,7 @@ This will produce the following output in line with acceptance criteria:
 <p align="center">
  <img src=images/irb_functions.png width=110%>
 </p><br><br>
+
+
+<!-- project link -->
+[available here]: https://github.com/Sumner1185/bankTechTest_JavaScript
